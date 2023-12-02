@@ -1,0 +1,345 @@
+@font-face {
+    font-family: 'MiFuente'; /* Nombre de la fuente */
+    src: url('../fonts/PlutoRegular.otf') format('opentype');
+    /* Puedes agregar más formatos, como woff2, woff, ttf para mejorar la compatibilidad */
+  }
+  
+  body {
+    font-family: 'MiFuente', Arial, Helvetica, sans-serif; /* Usa la fuente en el cuerpo del documento */
+  }
+      body {
+        background-color: #f8f9fa;
+        color: #ffffff; /* Texto en color blanco */
+      }
+      .navbar-custom {
+        background-color: rgb(56, 128, 0);
+        width: 90%; /* Ancho de la barra de navegación */
+        margin: auto; /* Centrar la barra de navegación */
+        transition: all 0.3s; /* Agregar transición para suavizar el efecto */
+      }
+      .search-box {
+        position: relative;
+      }
+      .search-box input {
+        border: 2px solid rgb(56, 128, 0);
+        border-radius: 15px; /* Redondear los bordes */
+        padding-right: 30px; /* Espacio para el ícono de búsqueda */
+      }
+      .search-icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgb(56, 128, 0);
+      }
+      .social-icons {
+          margin-top: 20px;
+        margin-bottom: 20px;
+        
+      }
+      .social-icons img {
+        width: 30px; /* Ajusta el tamaño según sea necesario */
+        height: 30px;
+        margin-right: 10px;
+        border-radius: 50%;
+        
+      }
+      .row {
+        margin-bottom: 20px; /* Espacio entre las filas */
+      }
+      .navbar-nav {
+        width: 100%; /* Ocupar todo el ancho disponible */
+        text-align: center; /* Centrar los elementos del menú */
+      }
+      .custom-menu {
+        width: 90%; /* Ancho del menú */
+        margin: auto; /* Centrar el menú */
+      }
+      .navbar-nav .nav-item {
+        width: 100%; /* Ocupar todo el ancho disponible */
+        text-align: center; /* Centrar el contenido de cada elemento del menú */
+      }
+      .navbar-nav .nav-link {
+        font-size: 10px; /* Tamaño del texto del enlace */
+        white-space: nowrap; /* Evitar saltos de línea */
+      }
+      .navbar-toggler {
+        font-size: 12px; /* Tamaño del texto del botón de alternancia */
+      }
+      .banner {
+        position: relative;
+        text-align: center;
+        overflow: hidden; /* Oculta el contenido que se desborde del contenedor */
+        height: 60vh; /* 60% de la altura de la ventana */
+      }
+      .banner img {
+        width: 100%; /* Ajusta la imagen al 100% del ancho del contenedor */
+        height: auto; /* Mantiene la proporción original de la imagen */
+      }
+      .banner-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1; /* Coloca el overlay encima de la imagen */
+        background: linear-gradient(rgb(78, 143, 46), rgba(0, 0, 0, 0.3)); /* Gradiente de color */
+      }
+      .banner-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2; /* Coloca el texto encima del overlay */
+        text-align: center;
+      }
+      .banner-text h2 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .banner-text hr {
+        border-color: #ffffff;
+        margin: 10px auto;
+        width: 50px; /* Ajusta la longitud de la línea */
+      }
+      .banner-text p {
+        font-size: 18px;
+      }
+      .logo-container  {
+       margin-top: 20px;
+      }
+      .logo-container img {
+        max-height: 70px; /* Altura máxima del logo */
+      }
+  
+      .section-monitoreo {
+        position: relative;
+        text-align: center;
+        padding: 100px 0; /* Ajusta según sea necesario */
+      }
+      .monitoreo-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Coloca el fondo detrás de los demás elementos */
+        background-image: url('../img/sec.jpg'); /* Ruta de imagen de fondo */
+        background-size: cover;
+        background-position: center;
+      }
+      .monitoreo-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgb(78, 143, 46), rgba(0, 0, 0, 0.3)); /* Gradiente de color */
+      }
+      .monitoreo-title {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 1; /* Coloca el texto encima del fondo y overlay */
+      }
+      .circles-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 2; /* Coloca los círculos encima del fondo y overlay */
+      }
+      .circle {
+        width: 100%;
+        max-width: 200px; /* Ajusta según sea necesario */
+        background-color: rgb(56, 128, 0);
+        border-radius: 50%;
+        margin: 0 10px; /* Ajusta según sea necesario */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px; /* Ajusta según sea necesario */
+      }
+      .circle-icon {
+        font-size: 24px;
+        color: #ffffff;
+      }
+      .circle-image {
+        width: 120px; /* Ajusta según sea necesario */
+        height: 120px;
+        margin-top: 10px;
+        border-radius: 50%;
+      }
+  
+      .section-herramientas {
+        position: relative;
+        text-align: center;
+        padding: 100px 0; /* Ajusta según sea necesario */
+        background-image: url('../img/imagen_seccion.jpg'); /*  ruta de imagen de fondo */
+        background-size: cover;
+        background-position: center;
+      }
+      .herramientas-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1; /* Coloca el overlay encima de la imagen */
+        background: linear-gradient(rgb(78, 143, 46), rgba(0, 0, 0, 0.3)); /* Gradiente de color */
+      }
+      .herramientas-title {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 2; /* Coloca el título encima del overlay */
+      }
+
+  
+      .section-herramientas {
+        position: relative;
+        text-align: center;
+        padding: 100px 0; /* Ajusta según sea necesario */
+        background-image: url('../img/imagen_seccion.jpg'); /* ruta de imagen de fondo */
+        background-size: cover;
+        background-position: center;
+      }
+      .white-circles-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 2; /* Coloca los círculos encima del overlay */
+        margin-top: 30px; /* Ajusta según sea necesario */
+      }
+      .white-circle {
+        width: 150px;
+        height: 150px;
+        background-color: #ffffff; /* Fondo blanco */
+        border-radius: 50%;
+        margin: 0 20px; /* Espaciado entre círculos */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .herramientas-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1; /* Coloca el overlay encima de la imagen */
+        background: linear-gradient(rgb(78, 143, 46), rgba(0, 0, 0, 0.3)); /* Gradiente de color */
+      }
+      .herramientas-title {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 2; /* Coloca el título encima del overlay */
+      }
+      .circle-text {
+        font-size: 18px;
+        color: rgb(56, 128, 0); /* Color verde del menú */
+        margin-top: 10px;
+      }
+  
+      .texto-verde{
+          color: rgb(56, 128, 0); /* Color verde del menú */
+      }
+
+      
+      /*section-registro-proyectos */
+      .section-registro-proyectos{
+        color: rgb(56, 128, 0); /* Color verde del menú */
+      }
+
+
+
+      .category-container {
+        text-align: center;
+    }
+
+    .category-title {
+        background-color: rgb(56, 128, 0); /* Verde en RGB */
+        color: #ffffff; /* Texto blanco */
+        padding: 10px;
+        border-radius: 30px; /* Bordes más redondos */
+        margin-bottom: 15px; /* Espaciado inferior para separar del contenido siguiente */
+    }
+
+  /*section-verificacion */
+    .section-verificacion {
+        background: url('../img/imagen-verificacion.jpg') center/cover no-repeat;
+        position: relative;
+        color: #ffffff; /* Color del texto */
+        text-align: center;
+    }
+
+    .verificacion-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(56, 128, 0, 0.7); /* Color del overlay con opacidad */
+    }
+
+    .verificacion-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .verificacion-title {
+        background-color: rgb(53, 88, 0); /* Verde en RGB */
+        color: #ffffff; /* Texto blanco */
+        padding: 10px;
+        border-radius: 30px; /* Bordes más redondos */
+        margin-bottom: 15px; /* Espaciado inferior para separar del contenido siguiente */
+    }
+
+
+    .center-vertical {
+        display: flex;
+        align-items: center;
+    
+        height: 100%;
+      }
+
+      .img-programas{
+        max-height: 120px
+      }
+
+      .section-center-vertical {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+
+      .titulo-verde{
+        font-size: 2em;
+        font-weight: bold;
+      }
+
+      .footer{
+        background-color: rgb(53, 88, 0); /* Verde en RGB */
+
+      }
+
+      .partner-icons img {
+        width: 250px; /* Ajusta el tamaño según sea necesario */
+        height: 250px;
+        margin-right: 10px;
+        border-radius: 50%;
+        
+      }
+
+      .section-herramientas a {
+        text-decoration: none;
+      }
